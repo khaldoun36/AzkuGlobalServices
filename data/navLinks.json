@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "/",
+    "name": "Home"
+  },
+  {
+    "slug": "/who-we-are",
+    "name": "Who we are"
+  },
+  {
+    "slug": "/#what-we-do",
+    "name": "What we do"
+  },
+  {
+    "slug": "/news-and-insights",
+    "name": "News and insights"
+  },
+  {
+    "slug": "/projects",
+    "name": "Projects"
+  },
+  {
+    "slug": "/compliance-and-safety",
+    "name": "Compliance and safety"
+  }
+]
