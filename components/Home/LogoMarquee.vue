@@ -38,6 +38,18 @@
         height="100"
         format="avif"
       />
+      <NuxtImg
+        src="/assets/company_logos/kbr.png"
+        width="240"
+        height="100"
+        format="avif"
+      />
+      <NuxtImg
+        src="/assets/company_logos/majnoon.png"
+        width="240"
+        height="100"
+        format="avif"
+      />
     </ul>
   </TheSiteContainer>
 </template>

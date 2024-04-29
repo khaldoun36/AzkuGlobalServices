@@ -1,3 +1,7 @@
+const typographyPlugin = require("@tailwindcss/typography");
+
+const typographyStyles = require("./typography");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [],
@@ -14,7 +18,8 @@ export default {
       "5xl": ["3rem", { lineHeight: "3.5rem" }],
       "6xl": ["3.75rem", { lineHeight: "1.2" }],
     },
+    typography: typographyStyles,
     extend: {},
   },
-  plugins: [],
+  plugins: [typographyPlugin],
 };

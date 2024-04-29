@@ -7,7 +7,7 @@
       <h1
         class="text-balance text-center text-4xl font-semibold text-zinc-50 md:text-6xl lg:max-w-[25ch]"
       >
-        Pioneering Energy Solutions for for the Oil and Gas Industry
+        Pioneering Energy Solutions for the Oil and Gas Industry
       </h1>
       <p
         class="max-w-[75ch] text-center text-base font-medium text-zinc-200/90 md:text-lg"

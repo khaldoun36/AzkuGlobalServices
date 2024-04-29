@@ -1,19 +1,26 @@
 <template>
-  <NuxtLink to="https://tailwindcss.com/docs/z-index">
-    <article class="overflow-clip rounded-md bg-zinc-50 hover:underline">
+  <NuxtLink :to="cardSlug">
+    <article
+      class="min-h-full overflow-clip rounded-md bg-zinc-50 hover:underline"
+    >
       <NuxtImg
-        src="https://images.unsplash.com/photo-1713184355726-d3a31d822fcc?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        :src="cardImage"
         format="avif"
+        class="aspect-[3/2]"
+        width="800"
+        height="1200"
+        :alt="`image for ${cardTitle}`"
       />
       <div
         aria-label="content"
         class="mt-2 flex flex-col items-start gap-8 p-6"
       >
         <h3 class="text-2xl font-medium text-zinc-950 md:text-4xl">
-          Lorem ipsum dolor sit amet.
+          {{ cardTitle }}
         </h3>
 
         <time
+          v-if="cardDate"
           :datetime="formattedDate"
           class="text-base font-medium text-zinc-500 md:text-lg"
           >{{ formattedDate }}</time
@@ -32,6 +39,14 @@ const options = { day: "numeric", month: "long", year: "numeric" };
 
 // Format the date using the toLocaleDateString() method
 const formattedDate = date.toLocaleDateString("en-US", options);
+
+// Props
+defineProps({
+  cardSlug: String,
+  cardImage: String,
+  cardTitle: String,
+  cardDate: String,
+});
 </script>
 
 <style lang="scss" scoped></style>

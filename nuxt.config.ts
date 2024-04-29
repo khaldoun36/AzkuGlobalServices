@@ -8,5 +8,6 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@vueuse/nuxt",
     "vue3-carousel-nuxt",
+    "@nuxt/content"
   ],
 });

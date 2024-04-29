@@ -11,31 +11,29 @@
       class="max-w-full pt-8"
       :wrap-around="true"
       :autoplay="5000"
+      :pauseAutoplayOnHover="true"
       :breakpoints="breakpoints"
     >
       <Slide v-for="(service, index) in services" :key="index">
         <div
           class="carousel__item mx-1 mb-8 space-y-2 overflow-clip rounded-md bg-white p-8 shadow md:mx-8"
         >
-          <div class="card_header flex items-center justify-between">
-            <h3 class="text-left text-lg font-medium capitalize text-zinc-950">
-              {{ service.serviceName }}
-            </h3>
-            <p class="text-lg font-medium text-zinc-950">0{{ index + 1 }}</p>
-          </div>
+          <h3 class="text-left text-lg font-medium capitalize text-zinc-950">
+            {{ service.serviceName }}
+          </h3>
           <p class="text-left text-sm text-zinc-500">
             {{ service.description }}
           </p>
           <div
-            class="card-visiuals hidden grid-cols-2 gap-8 overflow-clip pt-6 md:grid"
+            class="card-visiuals hidden grid-cols-1 gap-8 overflow-clip pt-6 md:grid"
           >
             <NuxtImg
-              src="https://images.unsplash.com/photo-1562237548-3c36707230ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="overflow-clip rounded-lg"
-            />
-            <NuxtImg
-              src="https://images.unsplash.com/photo-1562237548-3c36707230ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="overflow-clip rounded-lg"
+              :src="service.image"
+              :alt="`${service.serviceName} illustrative image`"
+              format="avif"
+              width="1200"
+              height="600"
+              class="aspect-[18/9] h-auto w-full overflow-clip rounded object-cover shadow-md"
             />
           </div>
         </div>
@@ -71,11 +69,7 @@ const breakpoints = ref({
     itemsToShow: 1.35,
   },
   1024: {
-    itemsToShow: 1.5,
-  },
-
-  1400: {
-    itemsToShow: 2.75,
+    itemsToShow: 1.95,
   },
 });
 </script>

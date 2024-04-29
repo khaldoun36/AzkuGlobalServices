@@ -9,9 +9,9 @@
     <NewsFeaturedNews />
     <div
       aria-label="news container"
-      class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2"
+      class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3"
     >
-      <NewsNormalNews v-for="n in 4" :key="n" />
+      <!-- <NewsNormalNews v-for="n in 4" :key="n" /> -->
     </div>
   </TheSiteContainer>
 </template>

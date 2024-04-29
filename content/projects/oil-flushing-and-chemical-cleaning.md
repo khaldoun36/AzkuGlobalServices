@@ -1,0 +1,28 @@
+---
+title: "Oil Flushing and Chemical Cleaning"
+description: "Comprehensive asset integrity services through expert oil flushing and chemical cleaning for brownfield sites. Services include pre-engineering, site surveys, system preparation, online flushing to NAS specs, chemical cleaning of coolers and piping, and verification via sampling tests and inspections. Maintain operational efficiency and extend equipment lifespan."
+thumbnail: "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/6.webp?tr=w-800,h-1200?updatedAt=1714375357967"
+visiuals:
+  [
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/6.webp?tr=w-800,h-1200?updatedAt=1714375357967",
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/3.webp?tr=w-800,h-1200?updatedAt=1714375359221",
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/1.webp?tr=w-800,h-1200?updatedAt=1714375359225",
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/5.webp?tr=w-800,h-1200?updatedAt=1714375358903",
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/4.webp?tr=w-800,h-1200?updatedAt=1714375358819",
+    "https://ik.imagekit.io/1p7sbsx42/projects/Oil%20Flushing%20and%20Chemical%20Cleaning/2.webp?tr=w-800,h-1200?updatedAt=1714375358762",
+  ]
+---
+
+The project is a contract aimed at maintaining asset integrity through comprehensive oil flushing and chemical cleaning activities at various brownfield sites. The project scope encompasses the following:
+
+- Pre-engineering activities to develop detailed procedures and work packages: Prior to commencing oil flushing and chemical cleaning operations, comprehensive pre-engineering activities will be undertaken to develop meticulous procedures and work packages.
+
+- Comprehensive site surveys: Thorough site surveys will be conducted to assess the condition of the equipment and determine the most effective oil flushing and chemical cleaning methodologies to be employed.
+
+- System preparation: The systems will undergo rigorous preparation for the oil flushing and chemical cleaning activities, involving the isolation and draining of the equipment.
+
+- Online flushing of Lube oil and seal oil tanks to meet stringent NAS specifications: The project will entail online flushing of Lube oil and seal oil tanks to stringent NAS specifications, aimed at ensuring the removal of contaminants and debris from the equipment.
+
+- Chemical cleaning of coolers and associated piping networks: Chemical cleaning of coolers and associated piping networks will be performed to remove accumulated deposits and contaminants, thereby enhancing the efficiency and lifespan of the equipment.
+
+- Verification through oil sampling tests and borescope inspections: Verification of the work performed will be conducted through comprehensive oil sampling tests and borescope inspections, ensuring that the oil flushing and chemical cleaning activities have been executed effectively and meet the required quality standards.
