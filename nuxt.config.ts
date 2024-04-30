@@ -1,6 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  // rendering stratgy
+  nitro: {
+    prerender: {
+      routes: [
+        "/",
+        "/projects",
+        "/who-we-are",
+        "news-and-insights",
+        "contact-us",
+        "compliance-and-safety",
+      ],
+    },
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
