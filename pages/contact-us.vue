@@ -67,7 +67,7 @@
         </div>
         <button
           type="submit"
-          class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-md px-5 py-3 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 sm:w-fit"
+          class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-md px-5 py-3 text-center text-sm font-medium text-zinc-50 focus:outline-none focus:ring-4 sm:w-fit"
         >
           Send message
         </button>

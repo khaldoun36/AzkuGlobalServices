@@ -42,6 +42,10 @@ import navLinks from "../../data/navLinks.json";
   color: theme(colors.zinc.950);
 }
 
+.site-btn {
+  color: theme(colors.zinc.50) !important;
+}
+
 .router-link-active:nth-child(3),
 .router-link-exact-active:nth-child(3) {
   color: theme(colors.zinc.500);

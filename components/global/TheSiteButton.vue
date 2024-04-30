@@ -10,6 +10,7 @@ import { twMerge } from "tailwind-merge";
 
 const button = cva(
   [
+    "site-btn",
     "h-10",
     "flex",
     "items-center",
