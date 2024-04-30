@@ -17,11 +17,11 @@
         customized services to maximize your impact.
       </p>
       <div class="btn-container flex items-center justify-center gap-6">
-        <TheSiteButton intent="secondary">
+        <TheSiteButton intent="secondary" to="/projects">
           View Projects
           <Icon name="tabler:arrow-up-right" class="text-zinc-50" size="18px" />
         </TheSiteButton>
-        <TheSiteButton intent="primary">
+        <TheSiteButton intent="primary" to="/contact-us">
           Contact us
           <Icon name="tabler:arrow-up-right" class="text-zinc-50" size="18px" />
         </TheSiteButton>

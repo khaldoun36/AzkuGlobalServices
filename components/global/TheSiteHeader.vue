@@ -13,7 +13,7 @@
           >{{ link.name }}</NuxtLink
         >
       </nav>
-      <TheSiteButton intent="primary">
+      <TheSiteButton intent="primary" to="/contact-us">
         Contact us
         <Icon name="tabler:arrow-up-right" class="text-zinc-50" size="18px" />
       </TheSiteButton>

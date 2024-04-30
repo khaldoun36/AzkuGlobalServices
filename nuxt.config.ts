@@ -8,6 +8,20 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@vueuse/nuxt",
     "vue3-carousel-nuxt",
-    "@nuxt/content"
+    "@nuxt/content",
   ],
+
+  // google fonts config
+  googleFonts: {
+    families: {
+      "IBM Plex Sans": {
+        wght: [400, 500, 600, 700],
+      },
+    },
+    display: "swap",
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    download: true,
+  },
 });
