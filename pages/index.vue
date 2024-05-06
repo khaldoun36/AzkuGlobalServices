@@ -6,10 +6,9 @@
         v-for="n in 12"
         :key="n"
         :src="`/assets/company_logos/logo-${n}.png`"
-        class="mx-8 scale-[1.2]"
+        class="mx-8 scale-[1.1]"
         format="avif"
-        width="130"
-        height="90"
+        placeholder
       />
     </Vue3Marquee>
     <template #fallback>
@@ -23,10 +22,9 @@
         v-for="n in 11"
         :key="n"
         :src="`/assets/company_logos/logo-${24 - n}.png`"
-        class="mx-8 scale-[1.2]"
+        class="mx-8 scale-[1.1]"
         format="avif"
-        width="130"
-        height="90"
+        placeholder
       />
     </Vue3Marquee>
     <template #fallback>
