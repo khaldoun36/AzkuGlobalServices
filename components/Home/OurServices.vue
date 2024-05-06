@@ -21,7 +21,7 @@
           <h3 class="text-left text-lg font-medium capitalize text-zinc-950">
             {{ service.serviceName }}
           </h3>
-          <p class="text-left text-sm text-zinc-500">
+          <p class="text-left text-sm text-zinc-500 md:h-[144px]">
             {{ service.description }}
           </p>
           <div
