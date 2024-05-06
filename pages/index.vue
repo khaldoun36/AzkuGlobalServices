@@ -7,6 +7,9 @@
         :key="n"
         :src="`/assets/company_logos/logo-${n}.png`"
         class="mx-8 scale-[1.2]"
+        format="avif"
+        width="130"
+        height="90"
       />
     </Vue3Marquee>
     <template #fallback>
@@ -21,6 +24,9 @@
         :key="n"
         :src="`/assets/company_logos/logo-${24 - n}.png`"
         class="mx-8 scale-[1.2]"
+        format="avif"
+        width="130"
+        height="90"
       />
     </Vue3Marquee>
     <template #fallback>
