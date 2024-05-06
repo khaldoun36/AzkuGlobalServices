@@ -11,7 +11,7 @@
     </h1>
     <div
       aria-label="news container"
-      class="mt-8 grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-3"
+      class="mt-8 grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-1"
     >
       <ContentList path="/projects" v-slot="{ list }">
         <div v-for="article in list" :key="article._path">

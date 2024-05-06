@@ -1,12 +1,12 @@
 <template>
   <NuxtLink :to="cardSlug">
     <article
-      class="min-h-full overflow-clip rounded-md bg-zinc-50 hover:underline"
+      class="flex min-h-full flex-col items-center gap-8 overflow-clip rounded-md bg-zinc-50 hover:underline md:flex-row"
     >
       <NuxtImg
         :src="cardImage"
         format="avif"
-        class="aspect-[3/2]"
+        class="aspect-[3/2] md:max-w-[40%]"
         width="800"
         height="1200"
         :alt="`image for ${cardTitle}`"
@@ -49,4 +49,4 @@ defineProps({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
