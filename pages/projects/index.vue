@@ -19,6 +19,7 @@
             :cardSlug="`/projects/${slugify(article.title)}`"
             :cardTitle="article.title"
             :cardImage="article.thumbnail"
+            :cardSummary="article.summary"
           />
         </div>
       </ContentList>

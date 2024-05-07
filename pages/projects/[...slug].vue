@@ -11,7 +11,7 @@
           <NuxtImg
             :src="image"
             format="avif"
-            class="aspect-[3/2]"
+            class="aspect-[3/2] object-contain"
             width="800"
             height="1200"
             :alt="`Project image ${index}`"
