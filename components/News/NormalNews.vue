@@ -1,12 +1,12 @@
 <template>
   <NuxtLink :to="cardSlug">
     <article
-      class="flex min-h-full flex-col items-center gap-8 overflow-clip rounded-md bg-zinc-50 md:flex-row"
+      class="flex min-h-full flex-col items-center overflow-clip rounded-md bg-zinc-50 md:flex-row md:gap-8"
     >
       <NuxtImg
         :src="cardImage"
         format="avif"
-        class="aspect-[1.66] object-cover md:max-w-[40%]"
+        class="aspect-[1.33] min-h-full object-cover md:max-w-[40%]"
         width="800"
         height="1200"
         :alt="`image for ${cardTitle}`"
@@ -17,12 +17,12 @@
       >
         <div>
           <h3
-            class="text-balance text-2xl font-medium text-zinc-950 md:text-4xl"
+            class="max-w-[45ch] text-balance text-2xl font-medium text-zinc-950 md:text-4xl"
           >
             {{ cardTitle }}
           </h3>
           <p class="max-w-[65ch] pt-6 text-base text-zinc-500 md:text-lg">
-            {{ cardSummary }}
+            {{ cardSummary.substring(0, 250) }}...
           </p>
         </div>
         <button

@@ -1,5 +1,8 @@
 <template>
-  <TheSiteContainer as="main" class="prose mx-auto mt-24 max-w-[85ch] md:mt-28">
+  <TheSiteContainer
+    as="main"
+    class="prose mx-auto mt-24 max-w-[100ch] md:mt-28"
+  >
     <ContentDoc v-slot="{ doc }">
       <h1
         class="text-balance text-left text-4xl font-semibold text-zinc-950 md:text-6xl lg:max-w-[25ch]"

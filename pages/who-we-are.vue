@@ -4,11 +4,11 @@
   >
     <TheSiteContainer as="main" className="lg:px-0 xl:pl-20">
       <NuxtImg
-        src="https://images.unsplash.com/photo-1562237553-36ad661d6f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?updatedAt=1715268961594"
         format="avif"
-        width="2070"
-        height="1380"
-        class="aspect-[16/10] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md"
+        width="4608"
+        height="3465"
+        class="aspect-[4/3] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
       />
     </TheSiteContainer>
 
