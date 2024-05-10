@@ -4,7 +4,7 @@
   >
     <TheSiteContainer as="main" className="lg:px-0 xl:pl-20">
       <NuxtImg
-        src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?updatedAt=1715268961594"
+        src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?updatedAt=1715337017431"
         format="avif"
         width="4608"
         height="3465"
