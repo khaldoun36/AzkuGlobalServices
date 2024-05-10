@@ -24,9 +24,7 @@
           <p class="text-justify text-sm text-zinc-500 md:h-[144px]">
             {{ service.description }}
           </p>
-          <div
-            class="card-visiuals hidden grid-cols-1 gap-8 overflow-clip pt-6 md:grid"
-          >
+          <div class="card-visiuals grid grid-cols-1 gap-8 overflow-clip pt-6">
             <NuxtImg
               :src="service.image"
               :alt="`${service.serviceName} illustrative image`"
