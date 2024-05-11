@@ -8,6 +8,7 @@
         format="avif"
         width="4608"
         height="3465"
+        sizes="484px"
         class="aspect-[4/3] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
       />
     </TheSiteContainer>
