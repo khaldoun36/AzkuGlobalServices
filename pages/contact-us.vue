@@ -11,7 +11,7 @@
 
       <!-- Form Start -->
 
-      <form action="#" class="min-w-full space-y-8 pt-4">
+      <form @submit.prevent="submitForm" class="min-w-full space-y-8 pt-4">
         <div>
           <label for="name" class="mb-2 block text-sm font-medium text-zinc-900"
             >Your name</label
@@ -21,6 +21,7 @@
             id="name"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
             placeholder="John Doe"
+            v-model="form.name"
             required
           />
         </div>
@@ -35,6 +36,7 @@
             id="email"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
             placeholder="name@company-name.com"
+            v-model="form.email"
             required
           />
         </div>
@@ -49,6 +51,7 @@
             id="subject"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-3 text-sm text-zinc-900 shadow-sm"
             placeholder="Let us know how we can help you"
+            v-model="form.subject"
             required
           />
         </div>
@@ -63,11 +66,12 @@
             rows="6"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-gray-900 shadow-sm"
             placeholder="Leave a comment..."
+            v-model="form.message"
           ></textarea>
         </div>
         <button
           type="submit"
-          class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-md px-5 py-3 text-center text-sm font-medium text-zinc-50 focus:outline-none focus:ring-4 sm:w-fit"
+          class="rounded-md bg-indigo-700 px-5 py-3 text-center text-sm font-medium text-zinc-50 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 sm:w-fit dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Send message
         </button>
@@ -119,8 +123,49 @@
 <script setup>
 import officeLocations from "../data/officeLocations.json";
 
-const handleFormSubmit = () => {
-  console.log("hgello world");
+const form = ref({
+  access_key: "5843cff9-5b2c-4e9d-a08d-6cbb28ac930d",
+  subject: "",
+  name: "",
+  email: "",
+  message: "",
+});
+
+const result = ref("");
+const status = ref("");
+
+const submitForm = async () => {
+  try {
+    status.value = "loading";
+    const response = await $fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: form.value,
+    });
+    console.log(response);
+    result.value = response.message;
+    if (response.status === 200) {
+      status.value = "success";
+    } else {
+      console.log(response); // Log for debugging, can be removed
+      status.value = "error";
+    }
+  } catch (error) {
+    console.log(error); // Log for debugging, can be removed
+    status.value = "error";
+    result.value = "Something went wrong!";
+  } finally {
+    // Reset form after submission
+    form.value.name = "";
+    form.value.email = "";
+    form.value.message = "";
+    form.value.subject = "";
+
+    // Clear result and status after 5 seconds
+    setTimeout(() => {
+      result.value = "";
+      status.value = "";
+    }, 5000);
+  }
 };
 </script>
 
