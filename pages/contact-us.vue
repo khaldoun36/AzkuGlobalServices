@@ -19,6 +19,7 @@
           <input
             type="text"
             id="name"
+            name="name"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
             placeholder="John Doe"
             v-model="form.name"
@@ -33,6 +34,7 @@
           >
           <input
             type="email"
+            name="email"
             id="email"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
             placeholder="name@company-name.com"
@@ -51,6 +53,7 @@
             id="subject"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-3 text-sm text-zinc-900 shadow-sm"
             placeholder="Let us know how we can help you"
+            name="subject"
             v-model="form.subject"
             required
           />
@@ -66,6 +69,7 @@
             rows="6"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-gray-900 shadow-sm"
             placeholder="Leave a comment..."
+            name="message"
             v-model="form.message"
           ></textarea>
         </div>
