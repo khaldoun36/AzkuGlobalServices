@@ -58,6 +58,45 @@
         growth and expansion across the Middle East. Together, we are forging
         the future of energy in this dynamic, high-stakes market.
       </p>
+      <!-- Our Certificates -->
+      <!--  -->
+
+      <h2
+        class="content-title py-4 text-3xl font-medium text-zinc-950 md:text-5xl"
+        id="compliance-and-safety"
+      >
+        Qualified Expertise
+      </h2>
+      <p class="text-base text-zinc-500 md:text-lg">
+        Azku Global Services is certified to the
+        <NuxtLink
+          to="https://ik.imagekit.io/1p7sbsx42/certificates/113271_Scanned%20Cert%20ISO%2045001.pdf?updatedAt=1715620638549"
+          target="_blank"
+          rel="noreferrer"
+          class="font-semibold underline underline-offset-2"
+          >ISO 45001:2018</NuxtLink
+        >,
+        <NuxtLink
+          to="https://ik.imagekit.io/1p7sbsx42/certificates/113271_Scanned%20Cert%20ISO%209001.pdf?updatedAt=1715620638540"
+          target="_blank"
+          rel="noreferrer"
+          class="font-semibold underline underline-offset-2"
+          >ISO 9001:2015</NuxtLink
+        >, and
+        <NuxtLink
+          to="https://ik.imagekit.io/1p7sbsx42/certificates/113271_Scanned%20Cert%20ISO%2014001.pdf?updatedAt=1715620638495"
+          target="_blank"
+          rel="noreferrer"
+          class="font-semibold underline underline-offset-2"
+          >ISO 14001:2015</NuxtLink
+        >
+        standards, showcasing our commitment to quality, environmental
+        management, and occupational health and safety. These prestigious
+        certifications demonstrate our adherence to industry-leading practices
+        across all operations. Our team is dedicated to continuously improving
+        processes that uphold these rigorous global standards for quality,
+        minimizing environmental impact, and ensuring workforce safety.
+      </p>
     </section>
   </div>
 </template>

@@ -50,4 +50,8 @@ import navLinks from "../../data/navLinks.json";
 .router-link-exact-active:nth-child(3) {
   color: theme(colors.zinc.500);
 }
+.router-link-active:last-of-type,
+.router-link-exact-active:last-of-type {
+  color: theme(colors.zinc.500);
+}
 </style>
