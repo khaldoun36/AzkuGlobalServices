@@ -68,7 +68,9 @@
         Qualified Expertise
       </h2>
       <p class="text-base text-zinc-500 md:text-lg">
-        Azku Global Services is certified to the
+        Azku Global Services is committed to providing our clients with the
+        highest quality services and solutions, safety is of paramount
+        importance that we prioritize in all of our operations. We are
         <NuxtLink
           to="https://ik.imagekit.io/1p7sbsx42/certificates/113271_Scanned%20Cert%20ISO%2045001.pdf?updatedAt=1715620638549"
           target="_blank"
@@ -90,12 +92,9 @@
           class="font-semibold underline underline-offset-2"
           >ISO 14001:2015</NuxtLink
         >
-        standards, showcasing our commitment to quality, environmental
-        management, and occupational health and safety. These prestigious
-        certifications demonstrate our adherence to industry-leading practices
-        across all operations. Our team is dedicated to continuously improving
-        processes that uphold these rigorous global standards for quality,
-        minimizing environmental impact, and ensuring workforce safety.
+        certified company that aim to deliver exceptional value to our clients
+        by following all regulatory processes and quality checks. Working with
+        Azku Global Services will be a smooth and stress-free experience.
       </p>
     </section>
   </div>
