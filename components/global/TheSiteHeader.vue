@@ -9,7 +9,7 @@
           v-for="link in navLinks"
           :key="link.slug"
           :to="link.slug"
-          class="space-x-10 text-sm font-medium text-zinc-500"
+          class="space-x-10 text-sm font-medium text-zinc-400"
           >{{ link.name }}</NuxtLink
         >
       </nav>
@@ -39,19 +39,20 @@ import navLinks from "../../data/navLinks.json";
 <style scoped>
 .router-link-active,
 .router-link-exact-active {
-  color: theme(colors.zinc.950);
+  color: theme('colors.zinc.950');
+
 }
 
 .site-btn {
-  color: theme(colors.zinc.50) !important;
+  color: theme('colors.zinc.50') !important;
 }
 
 .router-link-active:nth-child(3),
 .router-link-exact-active:nth-child(3) {
-  color: theme(colors.zinc.500);
+  color: theme('colors.zinc.400');
 }
 .router-link-active:last-of-type,
 .router-link-exact-active:last-of-type {
-  color: theme(colors.zinc.500);
+  color: theme('colors.zinc.400');
 }
 </style>
