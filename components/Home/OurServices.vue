@@ -3,8 +3,8 @@
     as="section"
     class="flex flex-col items-start justify-between bg-zinc-50 py-8 lg:py-20"
   >
-    <h1 class="text-3xl font-medium text-zinc-950 md:text-5xl">
-      Sustainable solutions, <br />personalized for you
+    <h1 class="text-3xl font-medium text-zinc-950 md:text-5xl max-w-[45ch]">
+      Sustainable solutions, personalized for you
     </h1>
     <!-- Our services Carousel -->
     <Carousel

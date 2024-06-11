@@ -2,24 +2,29 @@
   <div
     class="mt-24 grid max-w-full grid-cols-1 items-start gap-10 md:mt-28 lg:grid-cols-2"
   >
-    <TheSiteContainer as="main" className="lg:px-0 xl:pl-20">
+    <TheSiteContainer as="main" className="lg:px-0 xl:pl-20 grid gap-8">
+      <h1 class="text-3xl md:text-5xl font-semibold text-zinc-800 text-balance">Our
+        mission,
+        Our legacy,
+        Our
+        Certifications</h1>
       <NuxtImg
         src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?updatedAt=1715337017431"
         format="avif"
         width="4608"
         height="3465"
         sizes="484px"
-        class="aspect-[4/3] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
+        class="aspect-[4/4] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
       />
     </TheSiteContainer>
 
-    <section class="flex max-w-full flex-col gap-4 px-6 lg:pr-20">
-      <h1
-        class="content-title pb-4 text-3xl font-medium text-zinc-950 md:text-5xl"
+    <section class="flex max-w-full flex-col gap-4 px-6 lg:pr-20 mt-4">
+      <h2
+        class="content-title pb-4 text-2xl font-medium text-zinc-950 md:text-4xl"
       >
         Who we are
-      </h1>
-      <p class="text-base text-zinc-500 md:text-lg">
+      </h2>
+      <p class="text-base text-zinc-500">
         Since its founding, AGS has emerged as a leading provider of specialized
         services and solutions for the oil and gas industry across the Middle
         East. With deep local roots and an unparalleled understanding of the
@@ -27,7 +32,7 @@
         successfully executing a diverse range of complex projects and expertly
         navigating the unique challenges of operating in this dynamic market.
       </p>
-      <p class="text-base text-zinc-500 md:text-lg">
+      <p class="text-base text-zinc-500">
         Our presence in the region is stronger than ever, with strategically
         located offices in Iraq, Dubai, and Houston that enable us to deliver
         cost-effective, high-quality, and timely services to an extensive
@@ -38,11 +43,11 @@
       </p>
       <!-- Our values -->
       <h2
-        class="content-title py-4 text-3xl font-medium text-zinc-950 md:text-5xl"
+        class="content-title py-4 text-2xl font-medium text-zinc-950 md:text-4xl"
       >
         Our Values
       </h2>
-      <p class="text-base text-zinc-500 md:text-lg">
+      <p class="text-base text-zinc-500">
         At the heart of our success lies an unwavering commitment to delivering
         value-added services, cutting-edge equipment and materials, and
         personalized solutions tailored to each client's distinct needs. Our
@@ -50,7 +55,7 @@
         we work tirelessly to provide innovative, impactful answers that create
         lasting positive change for our clients' organizations.
       </p>
-      <p class="text-base text-zinc-500 md:text-lg">
+      <p class="text-base text-zinc-500">
         Building long-term, trust-based partnerships is the cornerstone of our
         business. We are proud to be a trusted advisor and go-to resource for
         our clients, leveraging our local expertise and expansive regional
@@ -62,12 +67,12 @@
       <!--  -->
 
       <h2
-        class="content-title py-4 text-3xl font-medium text-zinc-950 md:text-5xl"
+        class="content-title py-4 text-2xl font-medium text-zinc-950 md:text-4xl"
         id="compliance-and-safety"
       >
         Qualified Expertise
       </h2>
-      <p class="text-base text-zinc-500 md:text-lg">
+      <p class="text-base text-zinc-500">
         Azku Global Services is committed to providing our clients with the
         highest quality services and solutions, safety is of paramount
         importance that we prioritize in all of our operations. We are

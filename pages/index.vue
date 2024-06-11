@@ -48,7 +48,7 @@
   </ContentList>
   <!-- our project end -->
 
-  <HomeOurNews />
+<!--  <HomeOurNews />-->
 </template>
 
 <script setup></script>
