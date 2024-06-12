@@ -51,7 +51,6 @@
       <li>Logistics and project expediting</li>
       <li>Logistics and project expediting</li>
       <li>Quality assurance and control</li>
-      <li></li>
       <li>Pricing and budgeting</li>
       <li>Materials management</li>
     </ul>

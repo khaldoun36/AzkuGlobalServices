@@ -27,8 +27,8 @@
       <li>Solar powered Manifold and Skids</li>
       <li>Dehydration and Desalination Units
       </li>
-      <li>Chemical Injection Packages & Corrosion Inhibitor Skids</li>
       <li>Wellhead Control Panel</li>
+      <li>Chemical Injection Packages & Corrosion Inhibitor Skids</li>
     </ul>
   </TheSiteContainer>
 </template>
