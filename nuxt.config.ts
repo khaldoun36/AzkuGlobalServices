@@ -9,6 +9,9 @@ export default defineNuxtConfig({
         "/",
         "/projects",
         "/who-we-are",
+        "/epc",
+        "/field-services",
+        "/supply-chain",
         "news-and-insights",
         "contact-us",
         "compliance-and-safety",
@@ -38,4 +41,5 @@ export default defineNuxtConfig({
     preload: true,
     download: true,
   },
+
 });

@@ -44,11 +44,11 @@
         <!-- tel: -->
         <NuxtLink
           class="space-x-10 text-sm font-medium text-zinc-500 first:pt-4 hover:underline"
-          to="tel:+971505449868"
+          to="tel:+97144544310"
           target="_blank"
           rel="noopener"
         >
-          00971505449868
+          +971 4 4544310
         </NuxtLink>
       </div>
     </div>
