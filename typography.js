@@ -60,7 +60,7 @@ module.exports = function typographyStyles({ theme }) {
           fontWeight: theme("fontWeight.semibold"),
         },
         h2: {
-          fontSize: theme("fontSize.xl")[0],
+          fontSize: theme("fontSize.4xl")[0],
           lineHeight: theme("lineHeight.7"),
           marginTop: theme("spacing.20"),
           marginBottom: theme("spacing.4"),

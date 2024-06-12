@@ -1,18 +1,21 @@
 [
   {
-    "serviceName": "engineering, procurement and construction",
+    "serviceName": "Engineering, procurement and construction",
     "description": "AGS' years of field experience and vast procurement network enable it to deliver the right services at optimal times for clients. With World-Class Engineering Resources, a Procurement Network for Proprietary Equipment, Local Construction Expertise, Globally Accepted Certifications, and International Business Relationships, AGS provides unparalleled value in executing complex engineering, procurement, and construction projects.",
-    "image": "https://ik.imagekit.io/1p7sbsx42/epc/photo_1.jpeg?tr=w-1200,h-600,c-at_least?updatedAt=1714029469853"
+    "image": "https://ik.imagekit.io/1p7sbsx42/epc/photo_1.jpeg?tr=w-1200,h-600,c-at_least?updatedAt=1714029469853",
+    "slug": "/epc"
   },
   {
-    "serviceName": "field services",
+    "serviceName": "Field services",
     "description": "Backed by certified experts with extensive experience, we provide comprehensive pre-commissioning and commissioning services. Our offerings include non-metallic flowline flushing, oil flushing, chemical cleaning, leak testing, electrical and instrumentation work, and wellhead services. We also supply technical manpower and industrial coating solutions to meet your operational needs.",
-    "image": "https://ik.imagekit.io/1p7sbsx42/field%20services/photo_2023-11-05_12-00-51%20(2).jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714031501538"
+    "image": "https://ik.imagekit.io/1p7sbsx42/field%20services/photo_2023-11-05_12-00-51%20(2).jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714031501538",
+    "slug": "/field-services"
   },
 
   {
-    "serviceName": "supply chain",
+    "serviceName": "Supply chain",
     "description": "AGS offers a wide range of specialized equipment and services for the downstream, midstream, and upstream energy sectors. The company's expertise encompasses process and mechanical packages, bottom hole assembly (BHA) and completion tools, intervention and stimulation equipment, gear boxes for turbines and heat exchangers, and laboratory test equipment. AGS also specializes in mechanical commodities, providing integrated solutions that optimize efficiency across the energy supply chain.",
-    "image": "https://ik.imagekit.io/1p7sbsx42/supply%20chain/WhatsApp%20Image%202023-09-06%20at%2012.23.28..jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714033649718"
+    "image": "https://ik.imagekit.io/1p7sbsx42/supply%20chain/WhatsApp%20Image%202023-09-06%20at%2012.23.28..jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714033649718",
+    "slug": "/supply-chain"
   }
 ]

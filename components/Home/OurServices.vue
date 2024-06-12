@@ -4,7 +4,7 @@
     class="flex flex-col items-start justify-between bg-zinc-50 py-8 lg:py-20"
   >
     <h1 class="text-3xl font-medium text-zinc-950 md:text-5xl max-w-[45ch]">
-      Sustainable solutions, personalized for you
+      Sustainable solutions, <br/>personalized for you
     </h1>
     <!-- Our services Carousel -->
     <Carousel
@@ -15,13 +15,16 @@
       :breakpoints="breakpoints"
     >
       <Slide v-for="(service, index) in services" :key="index">
+        <NuxtLink :to="service.slug" class="block group">
         <div
-          class="carousel__item mx-1 mb-8 space-y-2 overflow-clip rounded-md bg-white p-8 shadow md:mx-8"
+          class="carousel__item mx-1 mb-8  overflow-clip rounded-md bg-white p-8 shadow md:mx-8 flex flex-col items-start gap-2 "
         >
-          <h3 class="text-left text-lg font-medium capitalize text-zinc-950">
+          <h2
+            class="text-left text-lg font-medium capitalize text-zinc-950 group-hover:underline">
             {{ service.serviceName }}
-          </h3>
-          <p class="text-justify text-sm text-zinc-500 md:h-[144px]">
+          </h2>
+          <p
+            class="text-justify text-sm text-zinc-500 md:h-[144px]">
             {{ service.description }}
           </p>
           <div class="card-visiuals grid grid-cols-1 gap-8 overflow-clip pt-6">
@@ -35,6 +38,7 @@
             />
           </div>
         </div>
+        </NuxtLink>
       </Slide>
 
       <template #addons>

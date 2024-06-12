@@ -41,6 +41,14 @@
         partners succeed in the lucrative yet demanding Middle Eastern energy
         sector.
       </p>
+      <p class="text-base text-zinc-500">
+        We are proud members of esteemed organizations such as the
+        <span class="font-semibold">US-Iraq Business Dialogue</span>,
+        <span class="font-semibold">US-Iraq
+        Chamber of Commerce</span>, <span class="font-semibold">Iraqi
+        Federation of Industries</span> , and the <span class="font-semibold">Iraqi Businessmen
+          Association</span>. Our memberships reflect our commitment to fostering strong business relationships and promoting economic growth between the US and Iraq.
+      </p>
       <!-- Our values -->
       <h2
         class="content-title py-4 text-2xl font-medium text-zinc-950 md:text-4xl"
@@ -105,7 +113,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
 <style scoped>
 .content-title {
@@ -119,6 +128,6 @@
   left: 0px;
   width: 20%;
   height: 1.5px;
-  background-color: theme(colors.zinc.950);
+  background-color: theme('colors.zinc.950');
 }
 </style>
