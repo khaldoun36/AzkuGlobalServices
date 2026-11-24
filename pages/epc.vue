@@ -10,7 +10,7 @@
         Engineering, procurement and construction (EPC)
       </h1>
       <NuxtImg
-        src="https://ik.imagekit.io/1p7sbsx42/epc/photo_1.jpeg?tr=w-1200,h-600,c-at_least?updatedAt=1714029469853" format="webp" preload alt="epc services image" class="min-w-full aspect-[4/3] object-cover"/>
+        src="https://ik.imagekit.io/1p7sbsx42/epc/photo_1.jpeg?tr=w-1200,h-600,c-at_least?updatedAt=1714029469853" format="webp" preload alt="epc services image" class="min-w-full aspect-4/3 object-cover"/>
     <p>As a highly experienced industrial EPC company, we provide a wide array of services to address the diverse needs of our clients. Our thorough approach to project management covers every phase, from initial design to final commissioning and handover. We are dedicated to delivering outstanding results and ensuring a seamless transition for our clients. Our proven track record spans successful project management in the petrochemical, oil and gas, construction, and energy sectors.</p>
     <h2>Our specializations</h2>
     <ul

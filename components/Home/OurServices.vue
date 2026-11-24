@@ -17,7 +17,7 @@
       <Slide v-for="(service, index) in services" :key="index">
         <NuxtLink :to="service.slug" class="block group">
         <div
-          class="carousel__item mx-1 mb-8  overflow-clip rounded-md bg-white p-8 shadow md:mx-8 flex flex-col items-start gap-2 "
+          class="carousel__item mx-1 mb-8  overflow-clip rounded-md bg-white p-8 shadow-sm md:mx-8 flex flex-col items-start gap-2 "
         >
           <h2
             class="text-left text-lg font-medium capitalize text-zinc-950 group-hover:underline">
@@ -34,7 +34,7 @@
               format="avif"
               width="1200"
               height="600"
-              class="aspect-[18/9] h-auto w-full overflow-clip rounded object-cover shadow-md"
+              class="aspect-18/9 h-auto w-full overflow-clip rounded-sm object-cover shadow-md"
             />
           </div>
         </div>

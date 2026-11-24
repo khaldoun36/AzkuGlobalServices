@@ -8,7 +8,7 @@
     </h2>
     <NuxtLink
       :to="projectSlug"
-      class="project-background flex aspect-[2/3] max-h-[700px] min-w-full flex-col justify-end gap-6 rounded-md p-8 text-zinc-50 lg:aspect-[18/9]"
+      class="project-background flex aspect-2/3 max-h-[700px] min-w-full flex-col justify-end gap-6 rounded-md p-8 text-zinc-50 lg:aspect-18/9"
     >
       <h3 class="max-w-[45ch] text-2xl font-medium md:text-4xl">
         {{ projectTitle }}
@@ -36,10 +36,12 @@ const props = defineProps([
 </script>
 
 <style scoped>
+@reference "../../assets/css/main.css";
+
 .project-background {
   background: linear-gradient(
-      theme(colors.zinc.950 / 60%),
-      theme(colors.zinc.950 / 60%)
+      --alpha(var(--color-zinc-950) / 60%),
+      --alpha(var(--color-zinc-950) / 60%)
     ),
     url("https://ik.imagekit.io/1p7sbsx42/projects/Gas%20Compressor%20Station/image002.jpg?tr=w-800,h-1200?updatedAt=1715338295325");
   background-size: cover;

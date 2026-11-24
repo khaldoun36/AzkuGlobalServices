@@ -10,7 +10,7 @@
       Supply Chain
     </h1>
     <NuxtImg
-      src="https://ik.imagekit.io/1p7sbsx42/supply%20chain/WhatsApp%20Image%202023-09-06%20at%2012.23.28..jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714033649718" format="webp" preload alt="epc services image" class="min-w-full aspect-[4/3] object-cover"/>
+      src="https://ik.imagekit.io/1p7sbsx42/supply%20chain/WhatsApp%20Image%202023-09-06%20at%2012.23.28..jpg?tr=w-1200,h-600,c-at_least?updatedAt=1714033649718" format="webp" preload alt="epc services image" class="min-w-full aspect-4/3 object-cover"/>
     <p>We proudly stand as a major industrial equipment supplier in the 
       Middle East, catering to a variety of industries. Partnering with global manufacturers and regional stockists, we deliver high-quality products that meet the stringent standards of the oil and gas sectors and the unique needs of our customers.
     </p>

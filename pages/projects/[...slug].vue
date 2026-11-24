@@ -5,7 +5,7 @@
   >
     <template v-if="doc">
       <h1
-        class="text-balance text-left text-4xl font-semibold text-zinc-950 md:text-6xl lg:max-w-[25ch]"
+        class="text-left text-4xl font-semibold text-balance text-zinc-950 md:text-6xl lg:max-w-[25ch]"
       >
         {{ doc.title }}
       </h1>
@@ -14,7 +14,7 @@
           <NuxtImg
             :src="image"
             format="avif"
-            class="aspect-[3/2] object-contain"
+            class="aspect-3/2 object-contain"
             width="800"
             height="1200"
             :alt="`Project image ${index}`"

@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky left-0 right-0 top-0 z-[9999] bg-white py-6 xl:px-20">
+  <header class="sticky left-0 right-0 top-0 z-9999 bg-white py-6 xl:px-20">
     <div class="header-layout flex items-center justify-between">
       <NuxtLink to="/">
         <img src="/assets/logo.png" class="max-h-10" />
@@ -37,22 +37,24 @@ import navLinks from "../../data/navLinks.json";
 </script>
 
 <style scoped>
+@reference "../../assets/css/main.css";
+
 .router-link-active,
 .router-link-exact-active {
-  color: theme('colors.zinc.950');
+  color: var(--color-zinc-950);
 
 }
 
 .site-btn {
-  color: theme('colors.zinc.50') !important;
+  color: var(--color-zinc-50) !important;
 }
 
 .router-link-active:nth-child(3),
 .router-link-exact-active:nth-child(3) {
-  color: theme('colors.zinc.400');
+  color: var(--color-zinc-400);
 }
 .router-link-active:last-of-type,
 .router-link-exact-active:last-of-type {
-  color: theme('colors.zinc.400');
+  color: var(--color-zinc-400);
 }
 </style>

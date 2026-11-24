@@ -17,7 +17,7 @@
       >
         <div>
           <h3
-            class="max-w-[45ch] text-balance text-2xl font-medium text-zinc-950 md:text-4xl"
+            class="max-w-[45ch] text-2xl font-medium text-balance text-zinc-950 md:text-4xl"
           >
             {{ cardTitle }}
           </h3>

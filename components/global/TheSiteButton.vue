@@ -24,9 +24,9 @@ const button = cva(
     "rounded-md",
     "cursor-pointer",
     "active:scale-90",
-    "focus:outline-2",
+    "focus:[outline-width:2px]",
     "focus:outline-offset-2",
-    "transition-colors",
+    "transition-[color,background-color,border-color,text-decoration-color,fill,stroke]",
   ],
 
   {

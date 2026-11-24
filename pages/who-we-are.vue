@@ -14,7 +14,7 @@
         width="4608"
         height="3465"
         sizes="484px"
-        class="aspect-[4/4] h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
+        class="aspect-4/4 h-auto w-full self-start overflow-clip rounded-md object-cover object-center shadow-md brightness-90"
       />
     </TheSiteContainer>
 
@@ -117,6 +117,8 @@
 </script>
 
 <style scoped>
+@reference "../assets/css/main.css";
+
 .content-title {
   position: relative;
 }
@@ -128,6 +130,6 @@
   left: 0px;
   width: 20%;
   height: 1.5px;
-  background-color: theme('colors.zinc.950');
+  background-color: var(--color-zinc-950);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <TheSiteContainer
     as="main"
-    class="grid aspect-[2/3] max-h-[700px] min-w-full items-center justify-center overflow-clip p-6 lg:aspect-[18/9]"
+    class="grid aspect-2/3 max-h-[700px] min-w-full items-center justify-center overflow-clip p-6 lg:aspect-18/9"
   >
     <div class="content flex flex-col items-center justify-center gap-6">
       <h1
@@ -33,10 +33,12 @@
 <script setup></script>
 
 <style scoped>
+@reference "../../assets/css/main.css";
+
 main {
   background: linear-gradient(
-      theme(colors.zinc.950 / 60%),
-      theme(colors.zinc.950 / 60%)
+      --alpha(var(--color-zinc-950) / 60%),
+      --alpha(var(--color-zinc-950) / 60%)
     ),
     url("../../assets/visual/hero_image_2.avif");
   background-size: cover;

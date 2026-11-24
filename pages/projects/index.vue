@@ -5,7 +5,7 @@
     className="px-0 lg:px-20"
   >
     <h1
-      class="text-balance text-left text-4xl font-semibold text-zinc-950 md:text-6xl lg:max-w-[25ch]"
+      class="text-left text-4xl font-semibold text-balance text-zinc-950 md:text-6xl lg:max-w-[25ch]"
     >
       Discover Our Latest Projects
     </h1>

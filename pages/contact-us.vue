@@ -4,7 +4,7 @@
   >
     <TheSiteContainer as="main" className="gap-4 flex  items-start flex-col">
       <h2
-        class="l text-balance text-left text-4xl font-semibold text-zinc-950 md:text-6xl"
+        class="l text-left text-4xl font-semibold text-balance text-zinc-950 md:text-6xl"
       >
         Contact Us
       </h2>
@@ -20,7 +20,7 @@
             type="text"
             id="name"
             name="name"
-            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-xs"
             placeholder="John Doe"
             v-model="form.name"
             required
@@ -36,7 +36,7 @@
             type="email"
             name="email"
             id="email"
-            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-sm"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-zinc-900 shadow-xs"
             placeholder="name@company-name.com"
             v-model="form.email"
             required
@@ -51,7 +51,7 @@
           <input
             type="text"
             id="subject"
-            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-3 text-sm text-zinc-900 shadow-sm"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-md border border-zinc-300 bg-zinc-50 p-3 text-sm text-zinc-900 shadow-xs"
             placeholder="Let us know how we can help you"
             name="subject"
             v-model="form.subject"
@@ -67,7 +67,7 @@
           <textarea
             id="message"
             rows="6"
-            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-gray-900 shadow-sm"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-md border border-zinc-300 bg-zinc-50 p-2.5 text-sm text-gray-900 shadow-xs"
             placeholder="Leave a comment..."
             name="message"
             v-model="form.message"
@@ -75,7 +75,7 @@
         </div>
         <button
           type="submit"
-          class="rounded-md bg-indigo-700 px-5 py-3 text-center text-sm font-medium text-zinc-50 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 sm:w-fit dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+          class="rounded-md bg-indigo-700 px-5 py-3 text-center text-sm font-medium text-zinc-50 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 focus:outline-hidden sm:w-fit dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Send message
         </button>
@@ -85,7 +85,7 @@
     </TheSiteContainer>
     <TheSiteContainer
       as="section"
-      className="max-w-full bg-gradient-to-r from-[#1e3c72] to-[#2a5298] gap-4 flex  items-start flex-col"
+      className="max-w-full bg-linear-to-r/srgb from-[#1e3c72] to-[#2a5298] gap-4 flex  items-start flex-col"
     >
       <h1 class="text-2xl font-semibold text-zinc-50 md:text-4xl">
         Contact Information
@@ -95,7 +95,7 @@
         by filling out the form below. We're here to help and will get back to
         you as soon as possible.
       </p>
-      <div class="space-y-3.5 hover:*:underline">
+      <div class="space-y-3.5 *:hover:underline">
         <NuxtLink
           to="mailto:Info@azkuglobalservices.com"
           class="flex items-center gap-3 text-sm text-zinc-300"
