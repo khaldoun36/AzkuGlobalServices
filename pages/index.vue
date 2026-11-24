@@ -35,8 +35,8 @@
   <HomeOurServices id="what-we-do" class="scroll-mt-40 lg:scroll-mt-28" />
 
   <!-- our project start -->
-  <ContentList path="/projects" v-slot="{ list }">
-    <div v-for="article in list.slice(0, 1)" :key="article._path">
+  <template v-if="list">
+    <div v-for="article in list.slice(0, 1)" :key="article.path">
       <HomeOurProjects
         :projectSlug="`/projects/${slugify(article.title)}`"
         :projectTitle="article.title"
@@ -45,12 +45,16 @@
         :endDate="article.endDate"
       />
     </div>
-  </ContentList>
+  </template>
   <!-- our project end -->
 
 <!--  <HomeOurNews />-->
 </template>
 
-<script setup></script>
+<script setup>
+const { data: list } = await useAsyncData("projects", () =>
+  queryCollection("projects").all(),
+);
+</script>
 
 <style scoped></style>

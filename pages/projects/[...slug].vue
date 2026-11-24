@@ -3,7 +3,7 @@
     as="main"
     class="prose mx-auto mt-24 max-w-[100ch] md:mt-28"
   >
-    <ContentDoc v-slot="{ doc }">
+    <template v-if="doc">
       <h1
         class="text-balance text-left text-4xl font-semibold text-zinc-950 md:text-6xl lg:max-w-[25ch]"
       >
@@ -33,6 +33,21 @@
         </template>
       </Carousel>
       <ContentRenderer :value="doc" />
-    </ContentDoc>
+    </template>
   </TheSiteContainer>
 </template>
+
+<script setup>
+const route = useRoute();
+
+const { data: doc } = await useAsyncData(route.path, () =>
+  queryCollection("projects").path(route.path).first(),
+);
+
+useSeoMeta({
+  title: () => doc.value?.title,
+  ogTitle: () => doc.value?.title,
+  description: () => doc.value?.description,
+  ogDescription: () => doc.value?.description,
+});
+</script>

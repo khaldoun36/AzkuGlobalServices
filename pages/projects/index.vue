@@ -13,8 +13,8 @@
       aria-label="news container"
       class="mt-8 grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-1"
     >
-      <ContentList path="/projects" v-slot="{ list }">
-        <div v-for="article in list" :key="article._path">
+      <template v-if="list">
+        <div v-for="article in list" :key="article.path">
           <NewsNormalNews
             :cardSlug="`/projects/${slugify(article.title)}`"
             :cardTitle="article.title"
@@ -22,13 +22,17 @@
             :cardSummary="article.summary"
           />
         </div>
-      </ContentList>
+      </template>
     </div>
   </TheSiteContainer>
 </template>
 
 <script setup>
 import slugify from "~/utils/slugify";
+
+const { data: list } = await useAsyncData("projects", () =>
+  queryCollection("projects").all(),
+);
 </script>
 
 <style scoped></style>

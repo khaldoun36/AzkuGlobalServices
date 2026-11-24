@@ -19,27 +19,36 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/google-fonts",
-    "@nuxt/image",
-    "nuxt-icon",
-    "@vueuse/nuxt",
     "vue3-carousel-nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/fonts",
+    "@nuxt/image",
+    "@nuxt/icon",
+    "@vueuse/nuxt",
     "@nuxt/content",
   ],
 
   // google fonts config
-  googleFonts: {
-    families: {
-      "IBM Plex Sans": {
-        wght: [400, 500, 600, 700],
+  fonts: {
+    families: [
+      {
+        name: "IBM Plex Sans",
+        provider: "google",
+        weights: [400, 500, 600, 700],
+        styles: ["normal"],
+        display: "swap",
+        preload: true,
       },
-    },
-    display: "swap",
-    prefetch: true,
-    preconnect: true,
-    preload: true,
-    download: true,
+    ],
   },
 
+  icon: {
+    mode: "svg",
+  },
+
+  content: {
+    experimental: {
+      sqliteConnector: "native",
+    },
+  },
 });
