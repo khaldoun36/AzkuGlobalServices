@@ -28,7 +28,7 @@ requests (`.github/workflows/ci.yml`).
 | Path                  | What it holds                                                  |
 | --------------------- | -------------------------------------------------------------- |
 | `pages/`              | One file per page                                              |
-| `components/`         | Shared components (`global/`) and page sections                |
+| `components/`         | Shared components (`TheSite*`) and page sections               |
 | `content/projects/`   | One Markdown file per project                                  |
 | `data/`               | Navigation links, office locations, services and client names  |
 | `assets/css/main.css` | Tailwind setup: theme, breakpoints and colors                  |
@@ -57,3 +57,9 @@ optional and shown on the home page for the first project.
   the receiving inbox.
 - **Client logos.** `public/assets/company_logos/logo-N.png` is paired with
   entry N in `data/clients.json`, which supplies the logo's alt text.
+- **pnpm version.** pnpm is pinned in three places that must stay in step:
+  `packageManager` in `package.json`, the lockfile, and the install command in
+  `vercel.json` (Vercel would otherwise pick its own, older pnpm).
+- **New dependency versions.** `pnpm-workspace.yaml` sets
+  `minimumReleaseAge: 1440`, so pnpm only installs versions that have been
+  published for at least a day. CI rejects lockfiles that break this rule.

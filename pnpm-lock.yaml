@@ -143,6 +143,9 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0(vue@3.5.46(typescript@6.0.3))
     devDependencies:
+      '@iconify-json/tabler':
+        specifier: ^1.2.46
+        version: 1.2.46
       '@nuxt/fonts':
         specifier: ^1.2.0
         version: 1.2.0(@nuxt/schema@4.7.0)(cac@7.1.1)(confbox@0.3.2)(db0@0.3.4)(dotenv@17.4.2)(esbuild@0.28.2)(giget@3.3.1)(jiti@2.7.0)(lightningcss@1.33.0)(magic-string@1.4.5)(mlly@1.8.2)(oxc-parser@0.154.0)(postcss@8.5.33)(rolldown@1.2.19)(rollup@4.68.8)(srvx@1.0.8)(vite@8.3.8(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))
@@ -515,8 +518,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify/collections@1.0.769':
-    resolution: {integrity: sha512-NReVg/aSN7A4VHdqYVpp7a9VptVX1WhB68wt6ZGPA4mQs3YZM2eEGNHwUF0FHBArKA7XdmNE6wcvKoqF3JZcuw==}
+  '@iconify-json/tabler@1.2.46':
+    resolution: {integrity: sha512-iyEZEUhHV4x1ZbNzzjk3i6Z+MH5h5nXipqKaH7+bUlnoQwzn7fNjWRSqwWtwQ4PYN6WM+N/fLQC/48TRto26qQ==}
+
+  '@iconify/collections@1.0.768':
+    resolution: {integrity: sha512-udBsNOj5OEEW7XUWh7lFdG9iVnN6g++VQbPCIp/L73Cdih6Gjt+NjYXQFVSepxjgSjtWNpy972QoAq3dyOJDwQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4676,7 +4682,11 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@iconify/collections@1.0.769':
+  '@iconify-json/tabler@1.2.46':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify/collections@1.0.768':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -5054,7 +5064,7 @@ snapshots:
 
   '@nuxt/icon@2.6.3(@nuxt/schema@4.7.0)(confbox@0.3.2)(dotenv@17.4.2)(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(nitropack@2.14.0(acorn@8.19.0)(bare-buffer@3.7.3)(oxc-parser@0.154.0)(rolldown@1.2.19)(srvx@1.0.8)(supports-color@10.2.2)(vite@8.3.8(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(oxc-parser@0.154.0)(rolldown@1.2.19)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(vite@8.3.8(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))':
     dependencies:
-      '@iconify/collections': 1.0.769
+      '@iconify/collections': 1.0.768
       '@iconify/types': 2.0.0
       '@iconify/utils': 3.1.7
       '@iconify/vue': 5.0.5(vue@3.5.46(typescript@6.0.3))

@@ -67,8 +67,8 @@
 </template>
 
 <script setup>
-import navLinks from "../../data/navLinks.json";
-import officeLocations from "../../data/officeLocations.json";
+import navLinks from "../data/navLinks.json";
+import officeLocations from "../data/officeLocations.json";
 </script>
 
 <style scoped></style>

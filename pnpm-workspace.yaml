@@ -1,2 +1,19 @@
+# This is a single-package project. The `packages` list is only here because
+# older pnpm versions (such as the pnpm 9 Vercel may pick) refuse to run when
+# this file exists without one.
+packages:
+  - "."
+
 allowBuilds:
   esbuild: true
+
+# Only install package versions that have been public for at least a day.
+# This is pnpm's default and what CI enforces; setting it here makes local
+# installs follow the same rule regardless of machine-wide pnpm settings.
+minimumReleaseAge: 1440
+
+# @nuxtjs/mdc (used by @nuxt/content) asks Vite to pre-bundle its Markdown
+# packages as "@nuxtjs/mdc > <package>", which only resolves when @nuxtjs/mdc
+# sits at the top of node_modules.
+publicHoistPattern:
+  - "@nuxtjs/mdc"

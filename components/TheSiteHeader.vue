@@ -40,11 +40,11 @@
 </template>
 
 <script setup>
-import navLinks from "../../data/navLinks.json";
+import navLinks from "../data/navLinks.json";
 </script>
 
 <style scoped>
-@reference "../../assets/css/main.css";
+@reference "../assets/css/main.css";
 
 /* Links to a section of a page (#...) count as "active" whenever their page
    is open, so only links to whole pages are highlighted. */
