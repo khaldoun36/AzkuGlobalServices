@@ -1,8 +1,5 @@
 <template>
-  <TheSiteContainer
-    as="main"
-    class="prose mx-auto mt-24 max-w-[100ch] md:mt-28"
-  >
+  <TheSiteContainer as="div" class="prose mx-auto mt-24 max-w-[100ch] md:mt-28">
     <template v-if="doc">
       <h1
         class="text-left text-4xl font-semibold text-balance text-zinc-950 md:text-6xl lg:max-w-[25ch]"
@@ -14,10 +11,11 @@
           <NuxtImg
             :src="image"
             format="avif"
+            :loading="index === 0 ? 'eager' : 'lazy'"
             class="aspect-3/2 object-contain"
             width="800"
             height="1200"
-            :alt="`Project image ${index}`"
+            :alt="`${doc.title}: photo ${index + 1}`"
           />
         </Slide>
 
@@ -43,6 +41,14 @@ const route = useRoute();
 const { data: doc } = await useAsyncData(route.path, () =>
   queryCollection("projects").path(route.path).first(),
 );
+
+if (!doc.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+    fatal: true,
+  });
+}
 
 useSeoMeta({
   title: () => doc.value?.title,

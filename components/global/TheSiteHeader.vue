@@ -1,15 +1,20 @@
 <template>
-  <header class="sticky left-0 right-0 top-0 z-9999 bg-white py-6 xl:px-20">
+  <header class="sticky top-0 right-0 left-0 z-9999 bg-white py-6 xl:px-20">
     <div class="header-layout flex items-center justify-between">
       <NuxtLink to="/">
-        <img src="/assets/logo.png" class="max-h-10" />
+        <img
+          src="/assets/logo.png"
+          alt="Azku Global Services"
+          class="max-h-10"
+        />
       </NuxtLink>
-      <nav class="hidden items-center gap-10 xl:flex">
+      <nav aria-label="Main" class="hidden items-center gap-10 xl:flex">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.slug"
           :to="link.slug"
-          class="space-x-10 text-sm font-medium text-zinc-400"
+          :class="{ 'nav-anchor': link.slug.includes('#') }"
+          class="space-x-10 text-sm font-medium text-zinc-500"
           >{{ link.name }}</NuxtLink
         >
       </nav>
@@ -19,13 +24,15 @@
       </TheSiteButton>
     </div>
     <nav
+      aria-label="Main"
       class="flex snap-x items-center justify-between gap-8 overflow-x-auto border-b border-zinc-100 py-6 xl:hidden"
     >
       <NuxtLink
         v-for="link in navLinks"
         :key="link.slug"
         :to="link.slug"
-        class="snap-start space-x-10 whitespace-nowrap text-base font-medium text-zinc-500"
+        :class="{ 'nav-anchor': link.slug.includes('#') }"
+        class="snap-start space-x-10 text-base font-medium whitespace-nowrap text-zinc-500"
         >{{ link.name }}</NuxtLink
       >
     </nav>
@@ -39,22 +46,14 @@ import navLinks from "../../data/navLinks.json";
 <style scoped>
 @reference "../../assets/css/main.css";
 
-.router-link-active,
-.router-link-exact-active {
+/* Links to a section of a page (#...) count as "active" whenever their page
+   is open, so only links to whole pages are highlighted. */
+.router-link-active:not(.nav-anchor),
+.router-link-exact-active:not(.nav-anchor) {
   color: var(--color-zinc-950);
-
 }
 
 .site-btn {
   color: var(--color-zinc-50) !important;
-}
-
-.router-link-active:nth-child(3),
-.router-link-exact-active:nth-child(3) {
-  color: var(--color-zinc-400);
-}
-.router-link-active:last-of-type,
-.router-link-exact-active:last-of-type {
-  color: var(--color-zinc-400);
 }
 </style>

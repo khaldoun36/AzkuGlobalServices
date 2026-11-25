@@ -1,6 +1,6 @@
 <template>
   <TheSiteContainer
-    as="main"
+    as="div"
     class="mt-24 max-w-full md:mt-28"
     className="px-0 lg:px-20"
   >
@@ -9,17 +9,15 @@
     >
       Discover Our Latest Projects
     </h1>
-    <div
-      aria-label="news container"
-      class="mt-8 grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-1"
-    >
+    <div class="mt-8 grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-1">
       <template v-if="list">
-        <div v-for="article in list" :key="article.path">
+        <div v-for="(article, index) in list" :key="article.path">
           <NewsNormalNews
-            :cardSlug="`/projects/${slugify(article.title)}`"
+            :cardSlug="article.path"
             :cardTitle="article.title"
             :cardImage="article.thumbnail"
             :cardSummary="article.summary"
+            :cardLoading="index < 2 ? 'eager' : 'lazy'"
           />
         </div>
       </template>
@@ -28,11 +26,17 @@
 </template>
 
 <script setup>
-import slugify from "~/utils/slugify";
+const { data: list } = await useProjects();
 
-const { data: list } = await useAsyncData("projects", () =>
-  queryCollection("projects").all(),
-);
+const description =
+  "Selected oil and gas projects delivered by Azku Global Services, from gas compressor stations to corrosion monitoring and commissioning services.";
+
+useSeoMeta({
+  title: "Projects",
+  ogTitle: "Projects",
+  description,
+  ogDescription: description,
+});
 </script>
 
 <style scoped></style>

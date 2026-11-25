@@ -4,6 +4,20 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      htmlAttrs: { lang: "en" },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      // Public address of the site, used for canonical links, the sitemap
+      // and social-share images. Override with NUXT_PUBLIC_SITE_URL.
+      siteUrl: "https://azkuglobalservices.com",
+    },
+  },
+
   css: ["~/assets/css/main.css"],
 
   vite: {
@@ -13,6 +27,8 @@ export default defineNuxtConfig({
   // rendering stratgy
   nitro: {
     prerender: {
+      // Follow links so every project page is prerendered too.
+      crawlLinks: true,
       routes: [
         "/",
         "/projects",
@@ -20,9 +36,8 @@ export default defineNuxtConfig({
         "/epc",
         "/field-services",
         "/supply-chain",
-        "news-and-insights",
-        "contact-us",
-        "compliance-and-safety",
+        "/contact-us",
+        "/sitemap.xml",
       ],
     },
   },
@@ -31,7 +46,6 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@nuxt/icon",
-    "@vueuse/nuxt",
     "@nuxt/content",
   ],
 

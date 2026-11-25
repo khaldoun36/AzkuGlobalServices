@@ -34,8 +34,8 @@ const button = cva(
       intent: {
         primary: [
           "text-zinc-50",
-          "bg-indigo-500",
-          "hover:bg-indigo-600",
+          "bg-indigo-600",
+          "hover:bg-indigo-700",
           "focus:outline-indigo-200",
         ],
         secondary: [

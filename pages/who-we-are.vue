@@ -2,15 +2,14 @@
   <div
     class="mt-24 grid max-w-full grid-cols-1 items-start gap-10 md:mt-28 lg:grid-cols-2"
   >
-    <TheSiteContainer as="main" className="lg:px-0 xl:pl-20 grid gap-8">
-      <h1 class="text-3xl md:text-5xl font-semibold text-zinc-800 text-balance">Our
-        mission,
-        Our legacy,
-        Our
-        Certifications</h1>
+    <TheSiteContainer as="div" className="lg:px-0 xl:pl-20 grid gap-8">
+      <h1 class="text-3xl font-semibold text-balance text-zinc-800 md:text-5xl">
+        Our mission, Our legacy, Our Certifications
+      </h1>
       <NuxtImg
-        src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?updatedAt=1715337017431"
+        src="https://ik.imagekit.io/1p7sbsx42/about_us.jpg?tr=w-1200&updatedAt=1715337017431"
         format="avif"
+        alt="AGS engineer in a hard hat and branded coveralls overlooking an oil and gas facility"
         width="4608"
         height="3465"
         sizes="484px"
@@ -18,7 +17,7 @@
       />
     </TheSiteContainer>
 
-    <section class="flex max-w-full flex-col gap-4 px-6 lg:pr-20 mt-4">
+    <section class="mt-4 flex max-w-full flex-col gap-4 px-6 lg:pr-20">
       <h2
         class="content-title pb-4 text-2xl font-medium text-zinc-950 md:text-4xl"
       >
@@ -44,10 +43,11 @@
       <p class="text-base text-zinc-500">
         We are proud members of esteemed organizations such as the
         <span class="font-semibold">US-Iraq Business Dialogue</span>,
-        <span class="font-semibold">US-Iraq
-        Chamber of Commerce</span>, <span class="font-semibold">Iraqi
-        Federation of Industries</span> , and the <span class="font-semibold">Iraqi Businessmen
-          Association</span>. Our memberships reflect our commitment to fostering strong business relationships and promoting economic growth between the US and Iraq.
+        <span class="font-semibold">US-Iraq Chamber of Commerce</span>,
+        <span class="font-semibold">Iraqi Federation of Industries</span> , and
+        the <span class="font-semibold">Iraqi Businessmen Association</span>.
+        Our memberships reflect our commitment to fostering strong business
+        relationships and promoting economic growth between the US and Iraq.
       </p>
       <!-- Our values -->
       <h2
@@ -114,6 +114,15 @@
 </template>
 
 <script setup>
+const description =
+  "AGS is a leading provider of specialized services and solutions for the oil and gas industry across the Middle East, with offices in Iraq, Dubai and Houston.";
+
+useSeoMeta({
+  title: "Who We Are",
+  ogTitle: "Who We Are",
+  description,
+  ogDescription: description,
+});
 </script>
 
 <style scoped>

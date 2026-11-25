@@ -1,11 +1,11 @@
 <template>
   <TheSiteContainer
-    as="main"
-    class="grid aspect-2/3 max-h-[700px] min-w-full items-center justify-center overflow-clip p-6 lg:aspect-18/9"
+    as="section"
+    class="hero grid aspect-2/3 max-h-[700px] min-w-full items-center justify-center overflow-clip p-6 lg:aspect-18/9"
   >
     <div class="content flex flex-col items-center justify-center gap-6">
       <h1
-        class="text-balance text-center text-4xl font-semibold text-zinc-50 md:text-6xl lg:max-w-[25ch]"
+        class="text-center text-4xl font-semibold text-balance text-zinc-50 md:text-6xl lg:max-w-[25ch]"
       >
         Pioneering Energy Solutions for the Oil and Gas Industry
       </h1>
@@ -35,8 +35,9 @@
 <style scoped>
 @reference "../../assets/css/main.css";
 
-main {
-  background: linear-gradient(
+.hero {
+  background:
+    linear-gradient(
       --alpha(var(--color-zinc-950) / 60%),
       --alpha(var(--color-zinc-950) / 60%)
     ),

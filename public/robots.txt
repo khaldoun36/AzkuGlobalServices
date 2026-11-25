@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azkuglobalservices.com/sitemap.xml

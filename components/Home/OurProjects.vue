@@ -8,18 +8,25 @@
     </h2>
     <NuxtLink
       :to="projectSlug"
+      :style="backgroundStyle"
       class="project-background flex aspect-2/3 max-h-[700px] min-w-full flex-col justify-end gap-6 rounded-md p-8 text-zinc-50 lg:aspect-18/9"
     >
       <h3 class="max-w-[45ch] text-2xl font-medium md:text-4xl">
         {{ projectTitle }}
       </h3>
-      <div class="flex items-center gap-4 text-lg text-zinc-300">
-        <p>
-          <time datetime="2020">{{ startDate }}</time> &mdash;
-          <time>{{ endDate }}</time>
+      <div
+        v-if="startDate || projectFor"
+        class="flex items-center gap-4 text-lg text-zinc-300"
+      >
+        <p v-if="startDate">
+          <time :datetime="startDate">{{ startDate }}</time>
+          <template v-if="endDate">
+            &mdash;
+            <time>{{ endDate }}</time>
+          </template>
         </p>
-        <span>&bull;</span>
-        <p>Project for {{ projectFor }}</p>
+        <span v-if="startDate && projectFor">&bull;</span>
+        <p v-if="projectFor">Project for {{ projectFor }}</p>
       </div>
     </NuxtLink>
   </TheSiteContainer>
@@ -29,21 +36,32 @@
 const props = defineProps([
   "projectSlug",
   "projectTitle",
+  "projectImage",
   "projectFor",
   "startDate",
   "endDate",
 ]);
+
+// The photo is passed to the stylesheet as a custom property so the dark
+// overlay stays defined in CSS.
+const backgroundStyle = computed(() =>
+  props.projectImage
+    ? { "--project-image": `url("${props.projectImage}")` }
+    : undefined,
+);
 </script>
 
 <style scoped>
 @reference "../../assets/css/main.css";
 
 .project-background {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       --alpha(var(--color-zinc-950) / 60%),
       --alpha(var(--color-zinc-950) / 60%)
     ),
-    url("https://ik.imagekit.io/1p7sbsx42/projects/Gas%20Compressor%20Station/image002.jpg?tr=w-800,h-1200?updatedAt=1715338295325");
+    var(--project-image, none);
+  background-color: var(--color-zinc-950);
   background-size: cover;
 }
 </style>

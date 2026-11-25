@@ -2,18 +2,24 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "@nuxt/content": "^3.17.0",
     "@nuxt/image": "^2.2.1",
     "@tailwindcss/vite": "^4.3.5",
-    "@vueuse/nuxt": "^15.1.0",
     "class-variance-authority": "^0.7.1",
     "nuxt": "^4.7.0",
     "tailwind-merge": "^3.7.1",
@@ -28,6 +34,8 @@
     "@nuxt/icon": "^2.6.3",
     "@tailwindcss/typography": "^0.5.20",
     "prettier": "^3.10.1",
-    "prettier-plugin-tailwindcss": "^0.8.1"
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.14"
   }
 }
